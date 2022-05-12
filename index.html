@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!-- doctype declaration telling the browser the version of html you are working with we are on 5-->
+<!-- type "html" and then press enter to populate the basic template of html tags needed for a webpage -->
+<!-- most commonly used atom keyboard shortcuts https://github.com/nwinkler/atom-keyboard-shortcuts -->
+<html lang="en" dir="ltr"> <!-- lang="en" we are definining the html docs language to be english -->
+<!-- dir="ltr" says the text in this html document is read left to right-->
+<!-- tell browser that everything inbetween these tags will be html code -->
+
+  <head> <!-- primarily holds information for machine processing not human visibe information-->
+    <!-- head holds info about the webpage telling the browser how it should handle the page https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML-->
+    <meta charset="utf-8"><!-- meta elements give extra meta data or associated data to your webpage https://devdocs.io/html/element/meta-->
+    <!-- we are telling the browser that all the text encoded above is encoded using the utf 8 encoding system -->
+    <!-- the are different types of encoding made for different languages-->
+    <!--find unicode character numbers https://unicode-table.com/en/ -->
+    <!-- use meta's "description" attribute to write the page description that shows up about your page on a google search -->
+    <title>Minenhle's Personal Site </title> <!-- Name of page, usually appears on the tab box -->
+  </head>
+  <body>
+    <table cellspacing="10">
+      <!-- Cell spacing defines the space of cells in the table this is a deprecated attribute -->
+      <tr>
+        <td><img src="images/IMG-20190215-WA0034-Original.jpg" alt="Minenhle profile picture" height="400"></td>
+        <td>
+          <h1>Minenhle Ndlovu</h1>
+          <p><em>Freelance Web Developer on <strong><a target="_blank"
+                  href="https://www.fiverr.com/?utm_source=google&utm_medium=cpc-brand&utm_campaign=G_ZA-EN_Brand&utm_term=one-fiverr_(exact)&utm_content=AdID%5e553700574672%5eKeyword%5efiverr%5ePlacement%5e%5eDevice%5ec&lpcat=br_general&caid=406997108&agid=33518238068&ad_id=553700574672&kw=fiverr&show_join=true&gclid=Cj0KCQjw1N2TBhCOARIsAGVHQc6FlyEBZPT_9pXn_Xy4jTWwJX2Epn6LNZjCfzgbweK633SC5ob0zMUaArZlEALw_wcB&gclsrc=aw.ds">fiverr</a>.</strong></em>
+          </p>
+          <!-- a tags help you link specific parts of your page to diff web pages, href attribute is where url/file path goes https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a -->
+          <!-- target blank tells browser to open link in a new tab it also has other values -->
+          <!--p formats text inside it into a paragraph, n puts text before and after into a new line  -->
+          <!-- <<em></em> tag italicisez text and also tells browser that the text enclosed between it should be stressed. other tags that stress text and stylize text: https://www.w3schools.com/html/html_formatting.asp-->
+          <!-- <i></i> tag italicisez text inbetween it only, it is just a visual tag -->
+          <p>I am a self taught coder and freelance web developer that also wants to study computer science and statistics</p>
+        </td>
+      </tr>
+    </table>
+    <!-- img tag that has attribute "src" which tells the browser the source of the image either a file path or a url https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img-->
+    <!-- img tag also has "alt" attribute telling the browser what to write instead of the image if somehow the image is not succesfully retrieved -->
+    <!-- browsers also check alt attributes to try figure out what your website is about, therefore it is good for search engine optimisation -->
+    <!-- when file you are referencing is in the main project folder then you just reference the files name inorder to use it -->
+    <!-- when image is in a folder you must use a file path like above https://www.w3schools.com/html/html_filepaths.asp-->
+
+    <hr size="3" noshade>
+    <!-- hr The line under all the heading has been created using this tag("size" attribute determines the size of the line in pixels)("noshade" attribute says the line must not be shadded there are other attributes just check under https://devdocs.io/html/element/hr -->
+    <h3>Education</h3>
+    <!--level 3 heading, it goes from level 1-6 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements -->
+    <ul>
+      <!-- unordered list(bullet point list), you can nest lists within eachother https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul -->
+      <li>Vector College(High School)</li> <!-- list items within your list tag -->
+      <li>Udemy online courses</li>
+    </ul>
+    <hr>
+    <h3>Work Experience</h3>
+    <table cellspacing="10">
+      <!-- table tag used to structure content into tables https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table -->
+      <thead>
+        <!-- table head which are formatted in default into bold -->
+        <tr>
+          <th> Dates</th> <!-- table header cells these are still recognised as headings even when not nested in table header tag-->
+          <th>Work</th>
+        </tr>
+      </thead>
+      <tr>
+        <!-- table row -->
+        <td>2018-2019</td> <!-- table cell or table data -->
+        <td>Lead Developer at tempo App</td>
+      </tr>
+      <tr>
+        <td>2022</td>
+        <td>Financial Consultant at old mutual finance</td>
+      </tr>
+      <tfoot>
+        <!-- table footer -->
+      </tfoot>
+    </table>
+    <hr>
+    <h3>Skills</h3>
+    <table cellspacing="10">
+      <tr>
+        <td>Python development</td>
+        <td>⭐⭐</td>
+      </tr>
+      <tr>
+        <td>Web development</td>
+        <td>⭐⭐</td>
+      </tr>
+      <tr>
+        <td>Skateboarding</td>
+        <td>⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>Java development</td>
+        <td>⭐⭐</td>
+      </tr>
+    </table>
+    <hr>
+    <a href="Hobbies.html">My Hobbies</a>
+    <br>
+    <a href="contactdetails.html">Contact Details</a>
+  </body>
+
+</html>
+<!-- to see entire html page source for a page right click and choose page source -->
+<!-- hit control+f t search for specific attributes and elements -->
+<!-- Deprecated is code that has been "downgraded" or is not recommended to be used-->

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>MY Contact Details</title>
+</head>
+
+<body>
+  <h1>My Contact Details</h1>
+  <ol>
+    <li>Email:minenhlework@gmail.com</li>
+    <li>0643625336</li>
+  </ol>
+  <hr>
+  <form action="mailto:ndlovuminenhletmn@gmail.com" method="post" target="_blank" enctype="text/plain"> <!-- determines what the form will do when data is entered -->
+    <!-- Method="post" says that whatever user inputs in the form and submits must be prepopulated into the email-->
+    <!-- action mailto: opens default mail app and prepopulates specified email address -->
+    <!-- Used so clients can input data to then be used later https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form -->
+    <!--enctype=text/plain we are saying that the data in our form is encoded in plain text-->
+    <label for="">Your name:</label> <!-- form label-->
+    <input type="text" name="yourName"> <!-- "type=text" saying the form will accept text https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+    <br>
+    <label>Your email:</label>
+    <input type="email" name="yourEmail"> <br> <!-- "type=email" Will give you a email input box that does basic validation of emails inputted into it-->
+    <!--"type=password" will let you enter a password and hides text while its being inputted-->
+    <label>Your Message:</label> <br>
+    <textarea name="yourMessage" cols="30" rows="10"></textarea> <br><!-- rows determine how tall the text area will be and cols determind how wide-->
+    <input type="submit" name=""> <!-- "type=submit" creates a submit button for your form -->
+  </form>
+</body>
+
+</html>
